@@ -7,6 +7,12 @@
 }
 
 /* Общие */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -156,7 +162,9 @@ button:focus {
   text-align: center;
   margin-top: 94px;
 }
+
 /* Список предложений */
+
 .list-offer .offer {
   font-size: 16px;
   line-height: 1.87;
@@ -265,6 +273,7 @@ address {
   margin-bottom: 94px;
   margin-top: 0;
   text-align: center;
+  background: rgba(47, 48, 58, 0.8);
 }
 
 .button-check {
@@ -471,6 +480,7 @@ footer .rights {
   display: flex;
   flex-direction: column;
   margin-top: 48px;
+  padding-left: 199px;
 }
 
 div ul {
@@ -478,14 +488,9 @@ div ul {
   display: flex;
 }
 
-footer div {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-}
-
 footer {
-  width: 1630px;
+  width: 1600px;
+  height: 253px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -500,4 +505,10 @@ footer b {
 .join,
 .subscribe {
   margin-top: 56px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 }
