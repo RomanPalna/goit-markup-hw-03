@@ -385,7 +385,6 @@ section .business {
 
 .container ul {
   display: flex;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -442,8 +441,11 @@ figure figcaption {
   margin-bottom: 10px;
 }
 
-.container p {
-  margin: 0;
+.footer-nav .container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .team .item {
@@ -477,20 +479,21 @@ section.our-clients {
 }
 
 /* Футер */
-footer {
+.footer-nav {
   background: #2f303a;
   margin-left: auto;
   margin-right: auto;
   padding-top: 48px;
 }
-footer .adress {
+.footer-nav .adress {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--link-seconary-color);
 }
-footer b {
+.footer-nav .joinus,
+.footer-nav .subscribeus {
   color: var(--link-seconary-color);
   font-weight: 700;
   font-size: 14px;
@@ -499,10 +502,12 @@ footer b {
   text-transform: uppercase;
   display: block;
   margin-bottom: 21px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-footer .mail,
-footer .tel {
+.footer-nav .mail,
+.footer-nav .tel {
   color: var(--footer-color);
   font-style: normal;
   font-weight: normal;
@@ -511,12 +516,12 @@ footer .tel {
   letter-spacing: 0.03em;
 }
 
-footer .social-link:hover,
-footer .social-link:focus {
+.footer-nav .social-link:hover,
+.footer-nav .social-link:focus {
   color: var(--link-seconary-color);
   background-color: var(--link-primary-color);
 }
-footer .submit {
+.footer-nav .submit {
   font-weight: 900;
   font-size: 16px;
   line-height: 1.87;
@@ -526,7 +531,7 @@ footer .submit {
   letter-spacing: 0.06em;
 }
 
-footer .rights {
+.footer-nav .rights {
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
@@ -535,12 +540,12 @@ footer .rights {
   color: rgba(255, 255, 255, 0.4);
   padding: 18px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0;
 }
 
 .foo-nav {
   display: flex;
   flex-direction: column;
-  padding-left: 199px;
   padding-bottom: 0;
 }
 
@@ -549,7 +554,7 @@ footer .rights {
   display: flex;
 }
 
-footer .container {
+.footer-nav .container {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
