@@ -19,7 +19,6 @@ ul {
   margin: 0;
 }
 body {
-  background-color: #e5e5e5;
   font-family: Roboto, sans-serif;
 }
 a {
@@ -81,8 +80,16 @@ h3 {
 }
 
 /* Стили ЛОГО */
-header,
+header {
+  padding-top: 0;
+  padding-bottom: 94px;
+  width: 1170px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 section.container {
+  padding-top: 94px;
   padding-bottom: 94px;
   width: 1170px;
   margin: 0 auto;
@@ -107,16 +114,6 @@ a.logo {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
-}
-
-.link .studio {
-  text-transform: none;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--link-seconary-color);
 }
 
 .mario .nav {
@@ -144,6 +141,7 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  background-color: #f5f4fa;
   border-radius: 4px;
   padding: 6px 22px;
   display: inline-block;
@@ -153,6 +151,11 @@ button:hover,
 button:focus {
   color: var(--link-seconary-color);
   background: var(--link-primary-color);
+}
+
+.linkto img {
+  width: 370px;
+  height: 294px;
 }
 
 .filter {
@@ -194,7 +197,7 @@ a.linkto:focus {
 }
 
 .list-offer {
-  width: 1230px;
+  width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -206,7 +209,7 @@ a.linkto:focus {
 }
 
 .flex {
-  width: 380px;
+  width: 360px;
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -334,6 +337,8 @@ a.princ-link {
   height: 120px;
   text-align: center;
   border-radius: 4px;
+
+  background-color: #f5f4fa;
 }
 a.princ-link:focus,
 a.princ-link:hover {
@@ -351,8 +356,7 @@ section .business {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  display: inline-block;
-  padding: 27px 86px;
+  padding: 27px 0;
   /* min-width: 370px; */
   border-radius: 0px 0px 4px 4px;
   margin: 0;
@@ -360,8 +364,7 @@ section .business {
 
 .container ul {
   display: flex;
-  justify-content: space-between;
-  padding-top: 94px;
+  width: 1170px;
 }
 
 .container li:not(:last-child) {
@@ -410,11 +413,15 @@ figure figcaption {
   margin: 0;
 }
 
+.team .item {
+  width: 270px;
+}
+
 /* Наши клиенты */
 .clients a {
   color: var(--title-text-color);
-  display: inline-block;
-  min-width: 175px;
+  display: block;
+  min-width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -430,13 +437,14 @@ figure figcaption {
   color: var(--link-seconary-color);
   background: var(--link-primary-color);
 }
-
 /* Футер */
 footer {
   background: #2f303a;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 48px;
 }
 footer .adress {
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -450,7 +458,7 @@ footer b {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  display: inline-block;
+  display: block;
   padding-top: 56px;
 }
 footer .mail,
@@ -488,28 +496,16 @@ footer .rights {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.container a {
-  margin-bottom: 10px;
-}
-.link.container {
+.foo-nav {
   display: flex;
   flex-direction: column;
-  margin-top: 48px;
   padding-left: 199px;
   padding-bottom: 0;
 }
 
 .join ul {
-  display: inline-block;
+  /* display: block; */
   display: flex;
-}
-
-footer {
-  height: 253px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 footer b {
@@ -517,8 +513,40 @@ footer b {
   padding: 0;
 }
 
-.footer-links {
+footer .container {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+}
+
+.foo-nav .studio-f {
+  text-transform: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--link-seconary-color);
+}
+
+a.logo-f {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--link-primary-color);
+}
+
+.join .item {
+  margin-right: 10px;
+}
+.join .item:last-child {
+  margin-right: 0;
+}
+
+.join {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
 }
