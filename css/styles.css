@@ -476,8 +476,9 @@ footer b {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   display: block;
-  padding-top: 56px;
+  margin-bottom: 21px;
 }
+
 footer .mail,
 footer .tel {
   color: var(--footer-color);
@@ -487,6 +488,7 @@ footer .tel {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
 footer .social-link:hover,
 footer .social-link:focus {
   color: var(--link-seconary-color);
@@ -523,11 +525,6 @@ footer .rights {
 .join ul {
   /* display: block; */
   display: flex;
-}
-
-footer b {
-  margin: 0;
-  padding: 0;
 }
 
 footer .container {
