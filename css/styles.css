@@ -83,7 +83,7 @@ h3 {
 header {
   padding-top: 0;
   /* padding-bottom: 94px; */
-  width: 1170px;
+  width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -91,7 +91,7 @@ header {
 section.container {
   padding-top: 94px;
   padding-bottom: 94px;
-  width: 1170px;
+  width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -381,7 +381,9 @@ section .business {
 
 .container ul {
   display: flex;
-  width: 1170px;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .container li:not(:last-child) {
