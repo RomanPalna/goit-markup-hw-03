@@ -456,6 +456,11 @@ figure figcaption {
   color: var(--link-seconary-color);
   background: var(--link-primary-color);
 }
+section.our-team,
+section.our-clients {
+  padding-top: 0;
+}
+
 /* Футер */
 footer {
   background: #2f303a;
