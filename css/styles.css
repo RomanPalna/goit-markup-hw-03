@@ -83,9 +83,9 @@ h3 {
 /* Стили ЛОГО */
 header,
 section.container {
-  padding-bottom: 0px;
-  width: 1230px;
-  margin: 0 auto 94px;
+  padding-bottom: 94px;
+  width: 1170px;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -120,16 +120,15 @@ a.logo {
 
 .mario .nav {
   display: flex;
-  margin-left: 86px;
-}
-
-.nav .item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .main-nav {
   display: flex;
   align-items: center;
+}
+
+.main-nav a {
+  margin-right: 85px;
 }
 
 /* Навигация портфолио */
@@ -160,9 +159,11 @@ button:focus {
 
 .filter {
   text-align: center;
-  margin-top: 94px;
 }
 
+section.portfolio {
+  padding-top: 93px;
+}
 /* Список предложений */
 
 .list-offer .offer {
@@ -202,7 +203,7 @@ a.linkto:focus {
   margin-right: auto;
   margin-top: 50px;
   margin-bottom: 94px;
-
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -249,13 +250,15 @@ a.linkto:focus {
 /* Навигация (правая сторона) */
 .adress {
   display: flex;
+  justify-content: end;
 }
 
 address {
   margin-left: auto;
 }
-.adress .item + .item {
-  margin-left: 50px;
+
+.adress a:not(:last-child) {
+  margin-right: 50px;
 }
 
 .adress a {
@@ -269,8 +272,8 @@ address {
 
 /* Герой */
 .hero {
-  padding-bottom: 0px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
+  margin-bottom: 0px;
   margin-top: 0;
   text-align: center;
   background: rgba(47, 48, 58, 0.8);
@@ -313,14 +316,15 @@ h3.principles {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
+  margin: auto;
+  padding: 0;
 }
 
 a.princ-link {
   display: inline-block;
   padding: 25px 104px;
-  margin-top: 0;
-  margin-bottom: 30px;
-  min-width: 278px;
+  margin: 0;
+
   height: 120px;
   text-align: center;
   border-radius: 4px;
@@ -342,15 +346,16 @@ section .business {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   display: inline-block;
-  padding: 27px 87px;
-  min-width: 380px;
-  height: 80px;
+  padding: 27px 86px;
+  /* min-width: 370px; */
   border-radius: 0px 0px 4px 4px;
   margin: 0;
 }
 
 .container ul {
   display: flex;
+  justify-content: space-between;
+  padding-top: 94px;
 }
 
 .container li:not(:last-child) {
@@ -396,8 +401,7 @@ figure figcaption {
 }
 
 .container p {
-  margin-top: 0;
-  margin-bottom: 16px;
+  margin: 0;
 }
 
 /* Наши клиенты */
@@ -474,22 +478,27 @@ footer .rights {
   text-align: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.4);
+  padding: 18px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.container a {
+  margin-bottom: 10px;
+}
 .link.container {
   display: flex;
   flex-direction: column;
   margin-top: 48px;
   padding-left: 199px;
+  padding-bottom: 0;
 }
 
-div ul {
+.join ul {
   display: inline-block;
   display: flex;
 }
 
 footer {
-  width: 1600px;
   height: 253px;
   padding-left: 15px;
   padding-right: 15px;
@@ -500,11 +509,6 @@ footer {
 footer b {
   margin: 0;
   padding: 0;
-}
-
-.join,
-.subscribe {
-  margin-top: 56px;
 }
 
 .footer-links {
