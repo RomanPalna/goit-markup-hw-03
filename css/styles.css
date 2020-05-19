@@ -97,6 +97,7 @@ a.logo {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--link-primary-color);
+  margin-right: 85px;
 }
 
 .logo b {
@@ -120,15 +121,12 @@ a.logo {
 
 .mario .nav {
   display: flex;
+  justify-content: end;
 }
 
 .main-nav {
   display: flex;
   align-items: center;
-}
-
-.main-nav a {
-  margin-right: 85px;
 }
 
 /* Навигация портфолио */
@@ -240,25 +238,33 @@ a.linkto:focus {
 .nav .link-nav:focus {
   color: var(--link-primary-color);
 }
-.nav .link-current,
-.nav .link-nav {
+.nav .item {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  margin-right: 50px;
+}
+
+.nav .item:last-child {
+  margin-right: 0;
 }
 
 /* Навигация (правая сторона) */
-.adress {
-  display: flex;
-  justify-content: end;
-}
-
 address {
   margin-left: auto;
 }
 
-.adress a:not(:last-child) {
+.adress {
+  display: flex;
+  margin-left: auto;
+}
+
+address .item {
   margin-right: 50px;
+}
+
+address .item:last-child {
+  margin-right: 0;
 }
 
 .adress a {
