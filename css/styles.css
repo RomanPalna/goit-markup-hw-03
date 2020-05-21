@@ -390,8 +390,6 @@ section .business {
 
 .container ul {
   display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .container li:not(:last-child) {
