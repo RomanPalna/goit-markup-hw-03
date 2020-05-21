@@ -346,14 +346,15 @@ h3.principles {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
-  margin: auto;
+  margin: 0 0 10px 0;
   padding: 0;
+  text-align: left;
 }
 
 a.princ-link {
   display: inline-block;
   padding: 25px 104px;
-  margin: 0;
+  margin: 0 0 30px 0;
 
   height: 120px;
   text-align: center;
@@ -381,6 +382,10 @@ section .business {
   /* min-width: 370px; */
   border-radius: 0px 0px 4px 4px;
   margin: 0;
+}
+
+.border {
+  border-top: 1px solid #ececec;
 }
 
 .container ul {
@@ -547,6 +552,10 @@ section.our-clients {
   display: flex;
   flex-direction: column;
   padding-bottom: 0;
+}
+
+.foo-nav a:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .join ul {
